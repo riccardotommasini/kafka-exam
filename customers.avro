@@ -1,0 +1,104 @@
+{
+        "namespace": "ksql",
+        "name": "customers",
+        "type": "record",
+        "fields": [
+                {"name": "id", "type": {
+                    "type": "int",
+                    "arg.properties": {
+                        "iteration": {
+                            "start": 1
+                        }
+                    }
+                }},
+                {"name": "first_name", "type": {
+                    "type": "string",
+                    "arg.properties": {
+                        "options": [
+                            "Annemarie",
+                            "Merilyn",
+                            "Mirilla",
+                            "Shirl",
+                            "Mumro",
+                            "Allyn",
+                            "Pepi",
+                            "Gianina",
+                            "Mirella",
+                            "Deborah"
+                        ]
+                    }
+                }},
+                {"name": "last_name", "type": {
+                    "type": "string",
+                    "arg.properties": {
+                        "options": [
+                            "Arent",
+                            "Doughartie",
+                            "Orwin",
+                            "Barnfather",
+                            "Igounet",
+                            "Langlois",
+                            "Medgwick",
+                            "Mixhel",
+                            "Bellin",
+                            "Thackray"
+                        ]
+                    }
+                }},
+                {"name": "email", "type": {
+                    "type": "string",
+                    "arg.properties": {
+                        "options": [
+                            "aarent0@cpanel.net",
+                            "mdoughartie1@dedecms.com",
+                            "morwin2@ehow.com",
+                            "sbarnfather3@arizona.edu",
+                            "migounet4@mapy.cz",
+                            "alanglois5@japanpost.jp",
+                            "pmedgwick6@google.de",
+                            "mixhel7@altervista.org",
+                            "mbellin8@youtube.com",
+                            "dthackray9@vkontakte.ru"
+                        ]
+                    }
+                }},
+                {"name": "club_status", "type": {
+                    "type": "string",
+                    "arg.properties": {
+                        "options": [
+                            "PLATINUM",
+                            "GOLD",
+                            "SILVER",
+                            "BRONZE"
+                        ]
+                    }
+                }},
+                {"name": "comments", "type": {
+                    "type": "string",
+                    "arg.properties": {
+                        "options": [
+                            "Organized web-enabled ability",
+                            "Optimized local definition",
+                            "Extended system-worthy superstructure",
+                            "Vision-oriented global extranet",
+                            "Streamlined bandwidth-monitored firmware",
+                            "Expanded explicit product",
+                            "Public-key high-level leverage",
+                            "Extended neutral function",
+                            "Inverse user-facing encryption",
+                            "Assimilated value-added standardization"
+                        ]
+                    }
+                }},
+                {"name": "gender", "type": {
+                    "type": "string",
+                    "arg.properties": {
+                        "options": [
+                            "MALE",
+                            "FEMALE",
+                            "OTHER"
+                        ]
+                    }
+                }}
+        ]
+}

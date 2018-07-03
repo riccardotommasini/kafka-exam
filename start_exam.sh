@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sh /home/training/ksql/bin/ksql-datagen schema=/home/training/customers.avro format=json topic=customers2 key=id  maxInterval=10 iterations=10
+
+echo "Press Enter if the prompt control does not return"
+
+sh /home/training/ksql/bin/ksql-datagen -daemon schema=/home/training/ratings_schema.avro format=json topic=ratings key=rating_id  maxInterval=10 iterations=1000 && true
+
+
+/home/training/ksql/bin/ksql-cli local --properties-file /home/training/ksql/ksql.properties
