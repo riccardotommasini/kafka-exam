@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sh /home/training/ksql/bin/ksql-datagen schema=/home/training/customers.avro format=json topic=customers2 key=id  maxInterval=10 iterations=10
+sh /home/training/ksql/bin/ksql-datagen schema=/home/training/customers.avro format=json topic=customers key=id  maxInterval=10 iterations=10
 
 echo "Press Enter if the prompt control does not return"
 
